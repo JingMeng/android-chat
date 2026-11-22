@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="cn.wildfirechat.chat">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -17,26 +16,26 @@
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
 
-    <!-- 通过GPS得到精确位置 -->
+    <!-- ???GPS????????? -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <!-- 通过网络得到粗略位置 -->
+    <!-- ??????????????? -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <!-- 访问网络. 某些位置信息需要从网络服务器获取 -->
+    <!-- ??????. ?????????????????????????-->
     <uses-permission android:name="android.permission.INTERNET" />
-    <!-- 访问WiFi状态. 需要WiFi信息用于网络定位 -->
+    <!-- ???WiFi???? ????iFi???????????? -->
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <!-- 修改WiFi状态. 发起WiFi扫描, 需要WiFi信息用于网络定位 -->
+    <!-- ???WiFi???? ???WiFi???, ????iFi???????????? -->
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
-    <!-- 访问网络状态, 检测网络的可用性. 需要网络运营商相关信息用于网络定位 -->
+    <!-- ?????????? ????????????? ?????????????????????????? -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <!-- 访问网络的变化, 需要某些信息用于网络定位 -->
+    <!-- ??????????? ???????????????????-->
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
-    <!-- 访问手机当前状态, 需要某些信息用于网络定位 -->
+    <!-- ????????????? ???????????????????-->
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
-    <!-- 蓝牙分享所需的权限 -->
+    <!-- ???????????????-->
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
 
@@ -64,7 +63,7 @@
             android:name="android.max_aspect"
             android:value="2.1" />
 
-        <!--地图-->
+        <!--???-->
         <meta-data
             android:name="TencentMapSDK"
             android:value="TYQBZ-MRBKU-K7FVL-4JBW5-DOG5O-SZB4A" />
@@ -87,11 +86,11 @@
             android:screenOrientation="portrait" />
         <activity
             android:name="cn.wildfire.chat.kit.user.SetAliasActivity"
-            android:label="设置用户备注"
+            android:label="?????????"
             android:screenOrientation="portrait" />
         <activity
             android:name="cn.wildfire.chat.kit.user.ChangeMyNameActivity"
-            android:label="修改昵称"
+            android:label="??????"
             android:screenOrientation="portrait" />
 
         <activity
@@ -103,15 +102,15 @@
             android:screenOrientation="portrait" />
         <activity
             android:name="cn.wildfire.chat.kit.group.SetGroupNameActivity"
-            android:label="修改群名称"
+            android:label="????????
             android:screenOrientation="portrait" />
         <activity
             android:name="cn.wildfire.chat.kit.setting.SettingActivity"
-            android:label="设置"
+            android:label="???"
             android:screenOrientation="portrait" />
         <activity
             android:name="cn.wildfire.chat.kit.setting.AboutActivity"
-            android:label="关于"
+            android:label="???"
             android:screenOrientation="portrait" />
         <activity
             android:name="cn.wildfire.chat.kit.third.location.ui.activity.ShowLocationActivity"
@@ -123,63 +122,63 @@
         <activity android:name="cn.wildfire.chat.kit.voip.SingleVoipCallActivity" />
         <activity
             android:name="cn.wildfire.chat.kit.conversation.CreateConversationActivity"
-            android:label="创建会话" />
+            android:label="??????" />
         <activity
             android:name="cn.wildfire.chat.kit.group.AddGroupMemberActivity"
-            android:label="添加新成员" />
+            android:label="???????? />
         <activity
             android:name="cn.wildfire.chat.kit.group.RemoveGroupMemberActivity"
-            android:label="删除群成员" />
+            android:label="???????? />
         <activity
             android:name="cn.wildfire.chat.kit.conversation.mention.MentionGroupMemberActivity"
-            android:label="选择群成员" />
+            android:label="???????? />
         <activity
             android:name="cn.wildfire.chat.kit.group.GroupListActivity"
-            android:label="群列表" />
+            android:label="????? />
         <activity
             android:name="cn.wildfire.chat.kit.contact.newfriend.FriendRequestListActivity"
-            android:label="好友请求" />
+            android:label="??????" />
         <activity
             android:name="cn.wildfire.chat.kit.contact.newfriend.SearchUserActivity"
-            android:label="搜索用户" />
+            android:label="??????" />
         <activity
             android:name="cn.wildfire.chat.kit.contact.newfriend.InviteFriendActivity"
-            android:label="邀请好友" />
+            android:label="??????? />
         <activity
             android:name="cn.wildfire.chat.kit.user.UserInfoActivity"
-            android:label="用户信息" />
+            android:label="??????" />
         <activity
             android:name="cn.wildfire.chat.kit.conversation.ConversationInfoActivity"
-            android:label="会话详情" />
+            android:label="??????" />
         <activity
             android:name="cn.wildfire.chat.kit.chatroom.ChatRoomListActivity"
-            android:label="聊天室列表" />
+            android:label="???????? />
         <activity
             android:name="cn.wildfire.chat.kit.search.SearchPortalActivity"
-            android:label="搜索中心" />
+            android:label="??????" />
         <activity
             android:name="cn.wildfire.chat.kit.conversation.forward.ForwardActivity"
-            android:label="转发" />
+            android:label="???" />
         <activity
             android:name="cn.wildfire.chat.kit.conversation.forward.PickConversationTargetToForwardActivity"
-            android:label="选取会话" />
+            android:label="??????" />
         <activity
             android:name="cn.wildfire.chat.app.login.SMSLoginActivity"
-            android:label="登录" />
+            android:label="???" />
         <activity
             android:name="cn.wildfire.chat.kit.channel.ChannelListActivity"
-            android:label="频道列表" />
+            android:label="??????" />
 
         <activity
             android:name="cn.wildfire.chat.kit.channel.CreateChannelActivity"
-            android:label="创建频道"
+            android:label="??????"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustPan|stateHidden|adjustResize" />
 
         <activity android:name="cn.wildfire.chat.kit.channel.ChannelInfoActivity" />
         <activity
             android:name="cn.wildfire.chat.app.main.MainActivity"
-            android:label="火信">
+            android:label="???">
             <intent-filter>
                 <action android:name="cn.wildfirechat.chat.main" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -192,7 +191,7 @@
 
         <activity
             android:name="cn.wildfire.chat.app.main.PCLoginActivity"
-            android:label="PC登录" />
+            android:label="PC???" />
         <activity android:name="cn.wildfire.chat.kit.qrcode.QRCodeActivity" />
 
         <provider
@@ -207,3 +206,4 @@
         <service android:name="cn.wildfire.chat.kit.voip.FloatingVoipService" />
     </application>
 </manifest>
+

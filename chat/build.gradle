@@ -1,6 +1,8 @@
 apply plugin: 'com.android.application'
 
 android {
+    namespace 'cn.wildfirechat.chat'
+    buildFeatures { buildConfig true; aidl true }
     signingConfigs {
         wfc {
             keyAlias 'wfc'
@@ -9,19 +11,17 @@ android {
             storePassword 'wildfirechat'
         }
     }
-    compileSdkVersion 28
+    compileSdk 34
     aaptOptions.cruncherEnabled = false
-    aaptOptions.useNewCruncher = false
     defaultConfig {
         applicationId "cn.wildfirechat.chat"
-        minSdkVersion 16
-        targetSdkVersion 28 //当targetversion大于23时，需要使用fileprovider
+        minSdk 16
+        targetSdk 34 //??argetversion???23??????????ileprovider
         versionCode 1
         versionName "1.0"
         multiDexEnabled true
         javaCompileOptions {
             annotationProcessorOptions {
-                includeCompileClasspath true
             }
         }
         manifestPlaceholders = [
@@ -39,7 +39,7 @@ android {
 
 
         ndk {
-            abiFilters "armeabi-v7a", 'x86' // ，'armeabi', 'arm64-v8a', 'x86', 'x86_64'
+            abiFilters "armeabi-v7a", 'x86' // ??armeabi', 'arm64-v8a', 'x86', 'x86_64'
         }
 
     }
@@ -54,8 +54,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
     lintOptions {
         abortOnError false
@@ -71,8 +71,8 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility 1.8
-        targetCompatibility 1.8
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
 }
 
@@ -122,3 +122,4 @@ dependencies {
 
 
 }
+
